@@ -9,10 +9,10 @@
 	<packaging>pom</packaging>
 	<name>cliente</name>
 	<description>Projeto Cliente Fatec Multiplataforma 2026</description>
-
 	<modules>
 		<module>domain</module>
 		<module>spring</module>
 	</modules>
+
 
 </project>
