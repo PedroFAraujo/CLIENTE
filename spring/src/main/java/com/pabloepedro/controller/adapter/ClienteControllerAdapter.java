@@ -6,10 +6,13 @@ import com.pabloepedro.entity.Cliente;
 
 public class ClienteControllerAdapter {
 
-    private ClienteControllerAdapter() {
-    }
+    private ClienteControllerAdapter() {}
 
     public static ClienteResponse castResponse(Cliente cliente) {
+
+        if (cliente == null) {
+            return null;
+        }
 
         EnderecoResponse enderecoResponse = null;
 

@@ -35,6 +35,7 @@ public class ClienteRepositoryImpl implements ClienteRepository {
     public List<Cliente> listar() {
         return repository.findAll()
                 .stream()
+                .filter(java.util.Objects::nonNull)
                 .map(ClienteRepositoryAdapter::castOrm)
                 .toList();
     }
